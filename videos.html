@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Chess Video Gallery</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+      <link type="text/css" rel="stylesheet" href="css/reset.css">
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+      
+    </head>
+    <body>
+      <header>
+        <div><img id="menu" src="img/hamburger-menu-512.webp"></div>
+        <a href="index.html"><h2>Home</h2></a>
+        <a href="videos.html"><h2>Chess</h2></a>
+        <a href="poems.html"><h2>Poems</h2></a>
+        <a href="story.html"><h2>Story</h2></a>
+      </header>
+      <div>
+        <h2 class="heading">Chess Video Gallery</h2>
+        <div class="container">
+        <div class="main-video">
+          <video src="img/Game 1.mp4" controls></video>
+          <h2 class="title">01. Lifeless Pieces (1500?) Vs. rojocongo (1282) QGA</h2>
+        </div>
+        <div class="video-list">
+          <div class="vid active">
+            <video src="img/Game1.mp4"></video>
+            <h2 class="title">01. Lifeless Pieces (1500?) Vs. rojocongo (1282) QGA</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game2.mp4"></video>
+            <h2 class="title">02. capomicio (1761) vs. LifelessPieces (1634?) Najdorf</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game3.mp4"></video>
+            <h2 class="title">03. LifelessPieces (1523?) Vs. nugroho03 (1541) QGD Marshall Defence</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game4.mp4"></video>
+            <h2 class="title">04. LifelessPieces (1644?) Vs. rezaboveiri (1799) 1. d4 f6??? </h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game5.mp4"></video>
+            <h2 class="title">05. fugukgsmukfufjm (1527) Vs. LifelessPieces (1775?) Chigorin</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game6.mp4"></video>
+            <h2 class="title">06. LittleCharlotte44 (1667) Vs. LifelessPieces (1806?)   Bowdler Attack</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game7.mp4"></video>
+            <h2 class="title">07. LifelessPieces (1847?) Vs. mtkvari (1760) 1. d4 b6</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game8.mp4"></video>
+            <h2 class="title">08. Khunufseh (1851) Vs. LifelessPieces (1890?) Bowdler Attack</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game9.mp4"></video>
+            <h2 class="title">09. LifelessPieces (1934?) Vs. OldSchoolrookie (1948) QID</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game10.mp4"></video>
+            <h2 class="title">10. Mayyarasf (1955) Vs. LifelessPieces (1978?) Najdorf 6. h3 e5 7. Nde2</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game11.mp4"></video>
+            <h2 class="title">11. eduardohenrique146 (1919) Vs. LifelessPieces (1938?) Najdorf 6. Bc4</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game12.mp4"></video>
+            <h2 class="title">12. LifelessPieces (1902?) Vs. SRac78 (1904) Makoganov</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game13.mp4"></video>
+            <h2 class="title">13. LifelessPieces (1867?) Vs. islam_ramzy (1847) Bogo Indian</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game14.mp4"></video>
+            <h2 class="title">14. LifelessPieces (1897) Vs. Sevandal01 (1916) KID</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game15.mp4"></video>
+            <h2 class="title">15. kizinsrv44 (1860?) Vs. LifelessPieces (1929) QGD</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game16.mp4"></video>
+            <h2 class="title">16. RC390 (1930) Vs. LifelessPieces (1950) Najdorf</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game17.mp4"></video>
+            <h2 class="title">17. c1-c2 (2015) Vs. LifelessPieces (1974) Colle System</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game18.mp4"></video>
+            <h2 class="title">18. LifelessPieces (2001) Vs. Azatobekzato (2006) Slav Defence</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game19.mp4"></video>
+            <h2 class="title">19. LifelessPieces (2024) Vs. chessmisso (2003) KID</h2>
+          </div>
+          <div class="vid">
+            <video src="img/Game20.mp4"></video>
+            <h2 class="title">20. LifelessPieces (2044) Vs. Ortizfran (2013) Makoganov</h2>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <script>
+
+        let listVideo = document.querySelectorAll(".video-list .vid")
+        let mainVideo = document.querySelector(".main-video video")
+        let title = document.querySelector(".main-video .title")
+
+        listVideo.forEach(video => {
+          video.onclick = () => {
+            listVideo.forEach(vid => vid.classList.remove('active'))
+            video.classList.add('active')
+            if (video.classList.contains("active")) {
+              let src = video.children[0].getAttribute("src")
+              mainVideo.src = src
+              let text = video.children[1].innerText
+              title.innerText = text
+            }
+          } 
+        })
+
+      </script>
+    </body>
+    <script src="js/script.js"></script>
+  </html>
