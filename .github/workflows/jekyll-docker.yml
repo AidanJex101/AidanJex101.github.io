@@ -1,0 +1,6 @@
+
+- name: checkout
+  uses: actions/checkout@v4
+  with:
+    lfs: true
+                  
